@@ -1,16 +1,16 @@
 //PATH: src/app/page.tsx
 
-import { Navbar, Container, HeroSection, Grid, BlendContainer } from "@/components";
+import { Navbar, Container, HeroSection, Grid,  } from "@/components";
 
 export default function Home() {
   return (
     <>
       {/* <Container> */}
       <Navbar />
-      <BlendContainer>
+      {/* <BlendContainer> */}
         <HeroSection/>
         <Grid />
-      </BlendContainer>
+      {/* </BlendContainer> */}
       
       SENTIMENT ANALYZER
       {/* </Container> */}
