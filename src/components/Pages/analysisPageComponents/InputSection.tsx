@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useDispatch } from 'react-redux';
-import { setSentimentValue, setConfidenceScores, setLoading, resetState } from '@/store/slice';
+import { setSentimentValue, setConfidenceScores, setLoading, setLoadingSpeedometer, resetState } from '@/store/slice';
 import { Heading } from '@/components';
 
 const textAnalysiSchema = z.object({
@@ -22,6 +22,7 @@ const InputSection: React.FC = () => {
 
   const onSubmit = async (data: FormValues) => {
     dispatch(setLoading(true));
+    dispatch(setLoadingSpeedometer(true));
     try {
       const response = await fetch('https://azure-language-sentiment-analysis.vercel.app/analyze-sentiment', {
         method: 'POST',
@@ -30,13 +31,18 @@ const InputSection: React.FC = () => {
       });
       const result = await response.json();
 
-      // Update state with API response
-      dispatch(setSentimentValue(result[0].sentiment));
-      dispatch(setConfidenceScores(result[0].confidenceScores));
+      // Simulate a delay to allow animations to be more noticeable
+      setTimeout(() => {
+        // Update state with API response
+        dispatch(setSentimentValue(result[0].sentiment));
+        dispatch(setConfidenceScores(result[0].confidenceScores));
+        dispatch(setLoading(false));
+        dispatch(setLoadingSpeedometer(false));
+      }, 1000); // Adjust this delay as needed
     } catch (error) {
       console.error('Error:', error);
-    } finally {
       dispatch(setLoading(false));
+      dispatch(setLoadingSpeedometer(false));
     }
   };
 

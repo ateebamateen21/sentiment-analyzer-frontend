@@ -8,18 +8,25 @@ import RemarksSection from "./analysisPageComponents/RemarksSection";
 import ConfidenceScoreSection from "./analysisPageComponents/ConfidenceScoresSection";
 
 const AnalysisPage: React.FC = () => {
- 
-
   return (
     <ReduxProvider>
-    <section className="flex flex-col md:flex-row h-screen gap-6 p-6">
-      <section className="md:w-2/3 flex flex-col gap-6">
-        <InputSection />
+      <section className="md:h-screen p-5 grid gap-6 md:grid-cols-2 ">
 
-        <RemarksSection />
-        <ConfidenceScoreSection  />
+        <div className="h-fit">
+          <InputSection />
+        </div>
+
+
+        <div className="h-fit">
+          <RemarksSection />
+        </div>
+
+
+        <div className="md:row-span-2 md:col-start-2 md:row-start-1">
+          <ConfidenceScoreSection />
+        </div>
+
       </section>
-    </section>
     </ReduxProvider>
   );
 };
