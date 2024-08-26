@@ -1,6 +1,15 @@
 //PATH: src/app/page.tsx
+import "./globals.css";
 
-import { Navbar, Container, HeroSection, Grid,  } from "@/components";
+import {
+  Navbar,
+  Container,
+  HeroSection,
+  Grid,
+  ProfileSection,
+  BotSection,
+  Footer,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -8,12 +17,15 @@ export default function Home() {
       {/* <Container> */}
       <Navbar />
       {/* <BlendContainer> */}
-        <HeroSection/>
-        <Grid />
+      <HeroSection />
+      <Grid />
       {/* </BlendContainer> */}
-      
-      SENTIMENT ANALYZER
+
+      <ProfileSection />
       {/* </Container> */}
+      <BotSection />
+
+      <Footer />
     </>
   );
 }
