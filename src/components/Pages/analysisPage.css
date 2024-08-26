@@ -1,0 +1,76 @@
+/* PATH: src/components/Pages/analysisPage.css */
+
+.backgroundAnalysis {
+  background-color: rgb(121, 116, 116);
+  background-image: url("/BGblur.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.inputSection{
+ z-index: 2;
+ position: relative;
+}
+.remarksSection{
+z-index: 1;
+position: relative;
+}
+.confidenceScoreSection{
+z-index: 1;
+}
+
+/* emoji positioning */
+
+.yellowFaceClass{
+  position: absolute;
+  top: -40px;
+  left:-40px;
+  
+  transform: rotate(-30deg);
+}
+.greenFaceClass{
+  position: absolute;
+  bottom: -75px;
+  right:-75px;
+  
+  transform: rotate(30deg);
+  z-index: 2;
+}
+.pinkFaceClass{
+  position: absolute;
+  bottom: 10px;
+  left:-55px;
+  
+  transform: rotate(-30deg);
+}
+.emojiBotClass{
+  position: absolute;
+  bottom: 0px;
+  right:-60px;
+  
+ 
+}
+.redFaceClass{
+  position: absolute;
+  top: -10px;
+  right:-30px;
+  
+  transform: rotate(30deg);
+}
+.purpleFaceClass{
+  position: absolute;
+  bottom: 155px;
+  right:75px;
+  
+  transform: rotate(30deg);
+}
+.greyFaceClass{
+  position: absolute;
+  bottom: 180px;
+  right:-40px;
+  
+  transform: rotate(30deg);
+}

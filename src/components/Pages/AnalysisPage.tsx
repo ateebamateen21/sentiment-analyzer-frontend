@@ -6,27 +6,26 @@ import ReduxProvider from "@/components/ReduxProvider";
 import InputSection from "./analysisPageComponents/InputSection";
 import RemarksSection from "./analysisPageComponents/RemarksSection";
 import ConfidenceScoreSection from "./analysisPageComponents/ConfidenceScoresSection";
+import "@/components/Pages/AnalysisPage.css";
 
 const AnalysisPage: React.FC = () => {
   return (
     <ReduxProvider>
-      <section className="md:h-screen p-5 grid gap-6 md:grid-cols-2 ">
+      <div className="backgroundAnalysis">
+        <section className="md:h-screen px-5  md:px-16 py-10 md:py-10 grid gap-6  md:gap-9 md:grid-cols-2 ">
+          <div className="h-fit ">
+            <InputSection />
+          </div>
 
-        <div className="h-fit">
-          <InputSection />
-        </div>
+          <div className="h-fit">
+            <RemarksSection />
+          </div>
 
-
-        <div className="h-fit">
-          <RemarksSection />
-        </div>
-
-
-        <div className="md:row-span-2 md:col-start-2 md:row-start-1">
-          <ConfidenceScoreSection />
-        </div>
-
-      </section>
+          <div className="md:row-span-2 md:col-start-2 md:row-start-1 ">
+            <ConfidenceScoreSection />
+          </div>
+        </section>
+      </div>
     </ReduxProvider>
   );
 };

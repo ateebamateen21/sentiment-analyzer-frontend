@@ -10,9 +10,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-teal-200 py-4">
+    <nav className="bg-blue-300  py-4">
       <Container>
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex justify-between items-center bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-4">
           <div className="text-2xl font-bold">NeuroBalanceAI</div>
           <div className="hidden md:flex space-x-4">
             <a href="#" className="hover:text-gray-700">

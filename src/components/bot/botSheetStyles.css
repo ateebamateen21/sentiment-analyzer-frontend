@@ -1,0 +1,18 @@
+/*PATH: src/component/bot/botSheetStyles.css */
+.botSheetDiv {
+    scrollbar-gutter: stable;
+}
+
+.botSheetDiv::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    background: rgba(0, 0, 0, 0); /* Transparent background to match the blurring effect */
+  }
+  
+  .botSheetDiv::-webkit-scrollbar-thumb {
+    background: red; /* Thumb color with opacity */
+    border-radius: 6px; /* Rounded corners */
+  }
+  
+  .botSheetDiv::-webkit-scrollbar-track {
+    background: transparent; /* Transparent track to match the blurring effect */
+  }

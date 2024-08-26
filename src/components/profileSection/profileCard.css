@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap");
+
+#login-container {
+  height: -moz-fit-content;
+  height: fit-content;
+
+  /* width: 33%; */
+  padding: 20px;
+  border-radius: 5px;
+  background: #fffffb;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-img {
+  height: 100px;
+  width: 100px;
+  background: url("https://images.unsplash.com/photo-1504933350103-e840ede978d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -25px;
+  left: -32px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profileName {
+  font-family: "Sriracha", arial, sans-serif;
+  font-size: 2rem;
+  text-align: right;
+  margin-bottom: 20px;
+  color: #519ab4;
+}
+
+.description {
+  margin-bottom: 20px;
+  min-height: 150px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social .linkWrap {
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social .linkWrap svg {
+    color: #519ab4; /* Default color for icons */
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .social .linkWrap:hover {
+    background-color: #519ab4;
+    color: white; /* This will change the color of the icon on hover */
+  }
+  
+  .social .linkWrap:hover svg {
+    color: white; /* Ensures the icon color changes to white on hover */
+  }
+
+.profileCardBtn {
+  width: 94%;
+  height: 50px;
+  font-size: 1.5rem;
+  margin: 15px 5% 0 5%;
+  color: #fffffb;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background: linear-gradient(45deg, #519ab4, #84d2f0, #84d2f0, #519ab4);
+  background-size: 300% 300%;
+  outline: none;
+  transition: all 200ms ease-in-out;
+}
+
+.profileCardBtn:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(2px);
+  animation: gradientBG 1.5s ease-in-out forwards;
+  cursor: pointer;
+}
+
+.profileCardBtn:active {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  transform: translateY(4px);
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
