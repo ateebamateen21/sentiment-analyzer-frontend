@@ -64,7 +64,7 @@ const ConfidenceScoreSection: React.FC = () => {
           ) : (
             <CircularProgressbar
               value={getPercentage(confidenceScores?.positive || 0)}
-              text={`${getPercentage(confidenceScores?.positive || 0)}%`}
+              text={`+${getPercentage(confidenceScores?.positive || 0)}%`}
               strokeWidth={4}
               background={true}
               backgroundPadding={4}
@@ -102,7 +102,7 @@ const ConfidenceScoreSection: React.FC = () => {
           ) : (
             <CircularProgressbar
               value={getPercentage(confidenceScores?.negative || 0)}
-              text={`${getPercentage(confidenceScores?.negative || 0)}%`}
+              text={`-${getPercentage(confidenceScores?.negative || 0)}%`}
               strokeWidth={4}
               background={true}
               backgroundPadding={4}
