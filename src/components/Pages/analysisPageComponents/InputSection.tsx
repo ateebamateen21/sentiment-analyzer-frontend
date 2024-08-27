@@ -13,7 +13,7 @@ import {
   resetState,
 } from "@/store/slice";
 import { Heading } from "@/components";
-import "@/components/Pages/analysisPage.css";
+import "./../analysisPage.css";
 import Image from "next/image";
 
 const textAnalysiSchema = z.object({

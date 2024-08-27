@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 import { SpinnerRoundOutlined } from "spinners-react";
 import Heading from "@/components/reusables/Heading";
-import "@/components/Pages/AnalysisPage.css";
+import "./../analysisPage.css";
 import Image from "next/image";
 
 const ConfidenceScoreSection: React.FC = () => {

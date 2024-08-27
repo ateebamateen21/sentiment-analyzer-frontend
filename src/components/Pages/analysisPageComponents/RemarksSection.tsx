@@ -6,7 +6,7 @@ import { Heading } from "@/components";
 import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 import { SpinnerRoundOutlined } from "spinners-react";
-import "@/components/Pages/analysisPage.css";
+import "./../analysisPage.css";
 import Image from "next/image";
 
 const RemarksSection: React.FC = () => {
