@@ -10,6 +10,9 @@ import BotSection from "./bot/BotSection";
 import BotSheet from "./bot/BotSheet";
 import Footer from "./footer/Footer";
 
+
+import AnalysisPage from "./Pages/AnalysisPage";
+
 // import BlendContainer from "./BlendContainer";
 export {
   Navbar,
@@ -22,3 +25,8 @@ export {
   BotSheet,
   Footer,
 };
+
+export const pages ={
+  AnalysisPage,
+};
+}

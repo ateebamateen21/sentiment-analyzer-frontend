@@ -1,7 +1,7 @@
 import React from "react";
 import Head from 'next/head';
 
-import AnalysisPage from "@/components/Pages/AnalysisPage";
+import {pages} from "@/components/index";
 
 const analysisPage = () => {
   return (
@@ -9,7 +9,7 @@ const analysisPage = () => {
       <Head>
         <title>Analyzer</title>
       </Head>
-      <AnalysisPage />
+      <pages.AnalysisPage />
     </>
   );
 };
