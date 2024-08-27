@@ -6,7 +6,7 @@ import ReduxProvider from "@/components/ReduxProvider";
 import InputSection from "./analysisPageComponents/InputSection";
 import RemarksSection from "./analysisPageComponents/RemarksSection";
 import ConfidenceScoreSection from "./analysisPageComponents/ConfidenceScoresSection";
-import "@/components/Pages/AnalysisPage.css";
+import "./AnalysisPage.css";
 
 const AnalysisPage: React.FC = () => {
   return (
