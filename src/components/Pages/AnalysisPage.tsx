@@ -1,3 +1,5 @@
+//PATH: src/components/Pages/AnalysisPage.tsx
+
 "use client";
 import React from "react";
 import { useSelector } from "react-redux";
@@ -6,7 +8,7 @@ import ReduxProvider from "@/components/ReduxProvider";
 import InputSection from "./analysisPageComponents/InputSection";
 import RemarksSection from "./analysisPageComponents/RemarksSection";
 import ConfidenceScoreSection from "./analysisPageComponents/ConfidenceScoresSection";
-import "./AnalysisPage.css";
+import './analysisPage.css'
 
 const AnalysisPage: React.FC = () => {
   return (
