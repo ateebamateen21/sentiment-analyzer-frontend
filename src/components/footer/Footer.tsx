@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../Container";
+import Container from "../reusables/Container";
 import { FaGithub } from "react-icons/fa";
 import { SiMicrosoft } from "react-icons/si";
 

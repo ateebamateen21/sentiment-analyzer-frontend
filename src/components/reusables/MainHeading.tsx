@@ -9,7 +9,7 @@ function MainHeading(
     { children, className }: MainHeadingProps
 ) {
   return (
-    <h1 className={`text-5xl font-bold  py-4  font-main ${className}`}>
+    <h1 className={`text-5xl font-bold font-main ${className}`}>
       {children}
     </h1>
   );

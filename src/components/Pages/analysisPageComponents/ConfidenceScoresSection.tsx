@@ -6,7 +6,7 @@ import "react-circular-progressbar/dist/styles.css";
 import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 import { SpinnerRoundOutlined } from "spinners-react";
-import Heading from "@/components/Heading";
+import Heading from "@/components/reusables/Heading";
 import "@/components/Pages/AnalysisPage.css";
 import Image from "next/image";
 
@@ -24,14 +24,14 @@ const ConfidenceScoreSection: React.FC = () => {
   return (
     <div className="confidenceScoreSection bg-blue-400 bg-opacity-10 backdrop-blur-lg border border-blue-200 border-opacity-20 rounded-lg px-3 pt-5  min-h-full max-h-fit flex flex-col justify-center">
       <Image
-        src="/emojiBot.png"
+        src="/bots/emojiBot.png"
         alt="emojiBot"
         width={200}
         height={250}
         className="emojiBotClass "
       />
       <Image
-        src="./redFace.svg"
+        src="./faces/redFace.svg"
         alt="redFace"
         width={100}
         height={100}
@@ -39,7 +39,7 @@ const ConfidenceScoreSection: React.FC = () => {
       />
       
       <Image
-        src="./purpleFace.svg"
+        src="./faces/purpleFace.svg"
         alt="purpleFace"
         width={60}
         height={60}
@@ -47,7 +47,7 @@ const ConfidenceScoreSection: React.FC = () => {
       />
       
       <Image
-        src="./greyFace.svg"
+        src="./faces/greyFace.svg"
         alt="greyFace"
         width={70}
         height={70}

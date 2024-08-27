@@ -24,7 +24,7 @@ const RemarksSection: React.FC = () => {
   return (
     <div className="remarksSection bg-blue-400 bg-opacity-10 backdrop-blur-lg border border-blue-200 border-opacity-20 rounded-lg p-3  md:h-1/2 flex justify-center items-center flex-col gap-6">
       <Image
-        src="./pinkFace.svg"
+        src="./faces/pinkFace.svg"
         alt="pinkFace"
         width={120}
         height={120}

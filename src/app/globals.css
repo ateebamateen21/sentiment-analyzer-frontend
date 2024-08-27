@@ -80,6 +80,10 @@
   font-family: 'Orbitron', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Apply to the whole page scrollbar */
 /* Hide scrollbar arrows and customize scrollbar */
 ::-webkit-scrollbar {

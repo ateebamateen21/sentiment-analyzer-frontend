@@ -5,7 +5,7 @@ import "./globals.css";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI Sentiment Analyzer",
+  title: "NeurobalanceAI",
   description: "A project powered by Microsoft Learn Student Ambassadors",
 };
 

@@ -1,8 +1,8 @@
 /* PATH: src/components/Pages/analysisPage.css */
 
 .backgroundAnalysis {
-  background-color: rgb(121, 116, 116);
-  background-image: url("/BGblur.png");
+  background-color: rgb(178, 234, 241);
+  background-image: url("/bgs/BGblur.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

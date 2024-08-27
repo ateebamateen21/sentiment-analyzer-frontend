@@ -6,7 +6,7 @@ interface HeadingProps {
 }
 
 const Heading: React.FC<HeadingProps> = ({ className, children }) => {
-  const baseClasses = 'text-lg font-bold text-gray-900 py-3'; // Default classes
+  const baseClasses = 'text-xl font-bold text-gray-900 py-3'; // Default classes
 
   return (
     <h2 className={`${baseClasses} ${className ? className : ''}`}>

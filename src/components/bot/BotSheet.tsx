@@ -6,9 +6,9 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import MainHeading from "../MainHeading";
+import MainHeading from "../reusables/MainHeading";
 import Image from "next/image";
-import Heading from "../Heading";
+import Heading from "../reusables/Heading";
 
 import './botSheetStyles.css';
 

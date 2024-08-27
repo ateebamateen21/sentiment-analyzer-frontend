@@ -64,14 +64,14 @@ const InputSection: React.FC = () => {
   return (
     <div className="inputSection bg-blue-400 bg-opacity-10 backdrop-blur-lg border border-blue-200 border-opacity-20 rounded-lg p-3 px-6  backdrop-filter md:h-1/2">
       <Image
-        src="./yellowFace.svg"
+        src="./faces/yellowFace.svg"
         alt="blueFace"
         width={90}
         height={90}
         className="yellowFaceClass "
       />
       <Image
-        src="./greenFace.svg"
+        src="./faces/greenFace.svg"
         alt="pinkFace"
         width={110}
         height={110}
