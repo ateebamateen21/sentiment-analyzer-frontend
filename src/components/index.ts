@@ -29,4 +29,3 @@ export {
 export const pages ={
   AnalysisPage,
 };
-}
