@@ -49,7 +49,7 @@ export default function Navbar() {
         </Container>
         {isOpen && (
           <Container>
-            <div className="md:hidden mt-4 bg-[#519ab4] backdrop-blur-md bg-opacity-15 rounded-lg transition-all duration-300 ease-in-out  ">
+            <div className="p-4 md:hidden mt-4 text-white font-bold bg-blue-950 backdrop-blur-md bg-opacity-45 rounded-lg transition-all duration-300 ease-in-out flex flex-col gap-3  ">
             <Link href="#articleSection" className="hover:text-gray-700">
                 Blog
               </Link>
