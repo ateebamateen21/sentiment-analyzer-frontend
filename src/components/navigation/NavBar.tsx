@@ -49,7 +49,7 @@ export default function Navbar() {
         </Container>
         {isOpen && (
           <Container>
-            <div className="md:hidden mt-4">
+            <div className="md:hidden mt-4 bg-[#519ab4] backdrop-blur-md bg-opacity-15 rounded-lg transition-all duration-300 ease-in-out  ">
               <a href="#" className="block p-2 hover:text-gray-700">
                 Project
               </a>

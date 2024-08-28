@@ -22,7 +22,7 @@ function ProfileSection() {
             <ProfileCard
               photo={Abid}
               name="Abid"
-              description="A driven undergraduate student pursuing a degree in electronics engineering with experience in backend, MERN and Machine Learning"
+              description="A driven undergraduate student in electronics engineering, experience in backend and Machine Learning"
               links={{
                 email: "ahr16.abidhasanrafi@gmail.com",
                 github: "https://github.com/AbidHasanRafi",
@@ -33,7 +33,7 @@ function ProfileSection() {
             <ProfileCard
               photo={Ateeba}
               name="Ateeba"
-              description="Student of BE Environmental Engineering with a passion for programming and web development. Skilled in React | NextJS, Docker, Kafka and MongoDB."
+              description="Student of BE Environmental Engineering with a passion for programming. React | NextJS, Docker, Kafka"
               links={{
                 email: "ateeba.mateen.21@gmail.com",
                 github: "https://github.com",
