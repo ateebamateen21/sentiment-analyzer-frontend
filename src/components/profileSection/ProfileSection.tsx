@@ -44,8 +44,7 @@ function ProfileSection() {
             <ProfileCard
               photo={Marwa}
               name="Marwa"
-              description="Skilled in Data Anaysis using Python,SQL and Tableau.
-              and well-versed in C++, C# and Microsoft technologies."
+              description="A final year Computer Science student with a strong knack of learning, proficient in Python, Node.js and C++ ."
               links={{
                 email: "marvashahid09@gmail.com",
                 github: "https://github.com/marwashahid",
