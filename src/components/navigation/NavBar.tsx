@@ -50,24 +50,22 @@ export default function Navbar() {
         {isOpen && (
           <Container>
             <div className="md:hidden mt-4 bg-[#519ab4] backdrop-blur-md bg-opacity-15 rounded-lg transition-all duration-300 ease-in-out  ">
-              <a href="#" className="block p-2 hover:text-gray-700">
-                Project
-              </a>
-              <a
-                href="#articleSection"
-                className="block p-2 hover:text-gray-700"
-              >
+            <Link href="#articleSection" className="hover:text-gray-700">
                 Blog
-              </a>
-              <a
-                href="#profileSection"
-                className="block p-2 hover:text-gray-700"
-              >
+              </Link>
+              <Link href="#profileSection" className="hover:text-gray-700">
                 Profile
-              </a>
-              <a href="#" className="block p-2 hover:text-gray-700">
-                Services
-              </a>
+              </Link>
+              <Link href="#botSection" className="hover:text-gray-700">
+                Chat
+              </Link>
+              <Link
+                href="/analysis"
+                className="hover:text-gray-700"
+                target="_blank"
+              >
+                Analyze
+              </Link>
             </div>
           </Container>
         )}
